@@ -5,10 +5,17 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class StringTransform {
-    public static String concat(String... c){
-        return Arrays.stream(c)
-                .filter(Objects::nonNull)
-                .collect(Collectors.joining());
+    public String concat(String... c){
+        String ret = "";
+        for(var item:c){
+           // if(item != null){
+              //  ret += item;
+            //}
+            if(item != null) {
+                ret = ret.concat(item);
+            }
+        }
+        return ret;
     }
 }
 
