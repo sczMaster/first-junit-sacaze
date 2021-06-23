@@ -39,7 +39,7 @@ public class CalculatorTest {
     	int a = 7;
         int b = 5;
         int result = a*b;
-        Assertions.assertEquals(result,calculator.multi(a, b)); 
+        Assertions.assertEquals(result, calculator.multi(a, b)); 
     }
     
     @Test
@@ -52,9 +52,12 @@ public class CalculatorTest {
 
     @Test
     public void should_add_tab(){
-        int nmbers[] = {2,2,4,2,5};
-        int result = calculator.add(nmbers);
-        Assertions.assertEquals(15, result);
+        int nmbers[] = {5,2,9,2,4};
+        for(int i=0;i>nmbers.length;i++) {
+        	int result = nmbers[i];
+        }
+        return result;
+        Assertions.assertEquals(result,calculator.add(nmbers));
     }
 
 
