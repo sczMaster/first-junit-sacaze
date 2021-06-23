@@ -18,15 +18,17 @@ public class CalculatorTest {
     @Test
     public void should_add_two_numbers(){
        // TODO
-    	int a = 5, b = 6, result = a + b;
-    	Assertions.assertEquals(result, Calculator.add(a,b));
+    	int a = 5;
+        int b = 3;
+        int result = a+b;
+        Assertions.assertEquals(result, Calculator.add(a, b));
     }
     
     @Test
     public void should_substract_two_numbers(){
         // TODO
-    	int a = 8, b = 6,result = a - b;
-    	Assertions.assertEquals(result, Calculator.substract(a,b));
+    	    	
+    	
     }
 
 
