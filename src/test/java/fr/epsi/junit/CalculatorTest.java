@@ -53,11 +53,12 @@ public class CalculatorTest {
     @Test
     public void should_add_tab(){
         int nmbers[] = {5,2,9,2,4};
-        for(int i=0;i>nmbers.length;i++) {
-        	int result = nmbers[i];
+        int adds = 0;
+        for( int i : nmbers) {
+            adds += i;
         }
-        return result;
-        Assertions.assertEquals(result,calculator.add(nmbers));
+        System.out.println("La somme des éléments du tableau est : "+ adds);
+        Assertions.assertEquals(adds,calculator.add(nmbers));
     }
 
 
