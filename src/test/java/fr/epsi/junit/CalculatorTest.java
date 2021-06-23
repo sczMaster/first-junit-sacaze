@@ -20,8 +20,8 @@ public class CalculatorTest {
        // TODO
     	int a = 5;
         int b = 3;
-        int result = calculator.add(a,b);;
-        Assertions.assertEquals(8, result);
+        int result = 5+3;
+        Assertions.assertEquals(result, calculator.add(a,b));
     }
     
     @Test
@@ -29,8 +29,8 @@ public class CalculatorTest {
         // TODO
     	int a = 6;
         int b = 4;
-        int result = calculator.substract(a, b);
-        Assertions.assertEquals(2, result); 	
+        int result = 6-4;
+        Assertions.assertEquals(result, calculator.substract(a, b)); 	
     	
     }
     
@@ -38,16 +38,16 @@ public class CalculatorTest {
     public void should_multi_two_numbers(){
     	int a = 7;
         int b = 5;
-        int result = calculator.multi(a, b);
-        Assertions.assertEquals(40, result); 
+        int result = 7*5;
+        Assertions.assertEquals(result,calculator.multi(a, b)); 
     }
     
     @Test
     public void should_div_two_numbers(){
     	int a = 1;
         int b = 4;
-        int result = calculator.div(a, b);
-        Assertions.assertEquals(0.25, result); 
+        int result = 1/4;
+        Assertions.assertEquals(result, calculator.div(a, b)); 
     }
 
     @Test
